@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
-  <defs>
-    <symbol id="icon-Modal-bg" viewBox="0 0 23 32">
-      <path fill="#fcfcfc" d="M.385.11h21.993a.22.22 0 0 1 .22.22v31.23a.22.22 0 0 1-.22.22H.385a.22.22 0 0 1-.22-.22V.33a.22.22 0 0 1 .22-.22z" style="fill:var(--color1, #fcfcfc)"/>
-    </symbol>
-  </defs>
-</svg>
