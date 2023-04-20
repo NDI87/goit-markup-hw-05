@@ -120,6 +120,11 @@ ul {
   background-color: var(--main-background-color);
 }
 .header-link {
+  position: relative;
+
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
