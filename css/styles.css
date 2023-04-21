@@ -443,9 +443,8 @@ button {
   padding-bottom: 16px;
   border: 1px solid var(--subtle-text-color);
   border-radius: 4px;
-  transition: color var(--typical-transition);
-  transition: fill var(--typical-transition);
-  transition: border color var(--typical-transition);
+
+  transition: border-color var(--typical-transition);
 }
 
 .custumers-icon {
@@ -571,11 +570,20 @@ button {
   line-height: 1.5;
   display: flex;
   align-items: center;
+  flex-direction: row;
+  justify-content: center;
   letter-spacing: 0.04em;
   color: var(--second-color);
   background-color: var(--light-color);
   cursor: pointer;
-  transition: background-color var(--typical-transition);
+  height: 48px;
+  background: var(--light-color);
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+  padding: 12px 24px;
+  transition: color var(--typical-transition),
+    border-color var(--typical-transition), box-shadow var(--typical-transition),
+    background-color var(--typical-transition);
 }
 
 .filter-btn-text:hover,
@@ -615,14 +623,6 @@ button {
   margin-top: 8px;
 }
 .btn1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  height: 48px;
-  background: var(--light-color);
-  border: 1px solid #e7e9fc;
-  border-radius: 4px;
-  padding: 12px 24px;
 }
 
 .category-card {
