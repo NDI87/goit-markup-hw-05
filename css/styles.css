@@ -73,8 +73,6 @@ ul {
 /* Header */
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 24px;
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -85,6 +83,7 @@ ul {
 }
 
 .container-header {
+  align-items: center;
   display: flex;
 }
 
@@ -130,7 +129,7 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--logo-color);
-  transition-property: background-color;
+
   transition: color var(--typical-transition);
 }
 
@@ -238,14 +237,10 @@ ul {
 }
 
 button {
-  width: 105px;
-  height: 24px;
 }
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: var(--hover-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /**__________________ABOUT_______________**/
@@ -450,12 +445,13 @@ button {
   border-radius: 4px;
   transition: color var(--typical-transition);
   transition: fill var(--typical-transition);
+  transition: border color var(--typical-transition);
 }
 
 .custumers-icon {
   display: flex;
   fill: var(--subtle-text-color);
-  transition: color var(--typical-transition);
+  transition: fill var(--typical-transition);
 }
 
 .customers-link:hover,
@@ -587,6 +583,8 @@ button {
   background-color: var(--hover-color);
   color: var(--main-background-color);
   border-color: transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .gallery-list {
@@ -624,6 +622,7 @@ button {
   background: var(--light-color);
   border: 1px solid #e7e9fc;
   border-radius: 4px;
+  padding: 12px 24px;
 }
 
 .category-card {
@@ -721,13 +720,12 @@ button {
 /** Modal button  */
 .modal-button {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 24px;
+  right: 24px;
   width: 24px;
   height: 24px;
-  margin-top: 24px;
-  margin-right: 24px;
 
+  cursor: pointer;
   background-color: var(--accent-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
