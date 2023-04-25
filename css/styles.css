@@ -675,6 +675,71 @@ button {
   transform: translateY(0);
 }
 
+/* Footer subscrible */
+
+.footer-subscribe {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.subscribe-text {
+  margin-bottom: 16px;
+  font-weight: 500;
+  color: var(--light-color);
+}
+
+.subscribe-form {
+  display: flex;
+}
+
+.subscribe-form-field {
+  margin-right: 24px;
+  width: 100%;
+}
+
+.subscribe-form-input {
+  padding: 8px 16px;
+  width: 100%;
+  height: 40px;
+
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+
+  border: 1px solid var(--main-background-color);
+  border-radius: 4px;
+  background-color: transparent;
+  color: var(--main-background-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+
+.subscribe-form-input::placeholder {
+  color: var(--main-background-color);
+}
+
+.subscribe-form-submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 24px;
+  gap: 16px;
+
+  background-color: var(--second-color);
+  color: var(--main-background-color);
+
+  transition: background-color var(--typical-transition);
+}
+
+.subscribe-form-icon {
+  fill: var(--main-background-color);
+}
+
+.subscribe-form-submit:hover,
+.subscribe-form-submit:focus {
+  background-color: var(--hover-color);
+}
+
 /**=============== Backdrop ===============*/
 
 .backdrop {
@@ -802,13 +867,13 @@ button {
   transition: fill var(--typical-transition);
 }
 .modal-title {
-  margin: 72px 24px 16px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
+  margin-bottom: 16px;
   text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
+  font-weight: 500;
+
   color: var(--logo-color);
 }
 
@@ -834,4 +899,88 @@ button {
   left: 16px;
   transform: translateY(-50%);
   fill: var(--logo-color);
+}
+
+.modal-form-message {
+  display: block;
+  width: 100%;
+  height: 120px;
+  padding: 8px 16px;
+  resize: none;
+
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.04em;
+
+  color: var(--dark-color);
+  border: 1px solid var(--modal-overlay-color);
+  border-radius: 4px;
+
+  transition: border-color var(--typical-transition);
+}
+
+.modal-form-message::placeholder {
+  color: var(--modal-overlay-color);
+}
+
+.modal-form-message:focus {
+  border-color: var(--second-color);
+  outline: none;
+}
+
+.modal-form-policy-field {
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.04em;
+  color: var(--subtle-text-color);
+}
+.modal-form-policy-field > a {
+  text-decoration: underline;
+  color: var(--second-color);
+}
+
+.modal-form-policy-checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8px;
+
+  border: 1px solid var(--modal-overlay-color);
+  border-radius: 2px;
+  cursor: pointer;
+
+  transition: background-color var(--typical-transition),
+    background-image var(--typical-transition);
+}
+
+.modal-form-policy:checked + .modal-form-policy-checkbox {
+  background-color: var(--hover-color);
+  border-color: var(--hover-color);
+}
+
+.modal-form-submit {
+  align-self: center;
+  margin-left: 119px;
+  margin-right: 120px;
+  margin-bottom: 20px;
+  min-width: 169px;
+  min-height: 56px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background-color: var(--second-color);
+  color: var(--main-background-color);
+
+  transition: background-color var(--typical-transition);
+}
+
+.modal-form-submit:hover,
+.modal-form-submit:focus {
+  background-color: var(--hover-color);
+}
+
+.modal-form-policy:checked + .modal-form-policy-checkbox > .checkbox-icon {
+  opacity: 1;
 }

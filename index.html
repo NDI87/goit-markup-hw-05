@@ -442,6 +442,26 @@
             </li>
           </ul>
         </div>
+        <div class="footer-subscribe">
+          <p class="subscribe-text text">Subscribe</p>
+          <form name="subscribe-form" class="subscribe-form">
+            <label class="subscribe-form-field">
+              <input
+                type="email"
+                name="user_mail"
+                class="subscribe-form-input"
+                required
+                placeholder="E-mail"
+                />
+            </label>
+            <button type="submit" class="subscribe-form-submit">
+              Subscribe
+              <svg class="subscribe-form-icon" width="24px" height="24px">
+                <use href="./images/icons.svg#icon-subscribe"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -494,14 +514,30 @@
             </span>
 
           </label>
-          <label class="modal-label">
-            <span>Comment</span>
-            <input type="text"
-              name="user-comment"
-              class="modal-input"
-              placeholder="Text input">
+          <label class="modal-form-field">
+            <span class="modal-form-description">Comment</span>
+            <textarea
+              name="user_message"
+              class="modal-form-message"
+              placeholder="Text input"></textarea>
           </label>
-          <button type="submit">Send</button>
+          <label for="user-policy" class="modal-form-policy-field">
+            <input
+              id="user-policy"
+              type="checkbox"
+              name="user_policy"
+              class="modal-form-policy visually-hidden"
+              required
+              />
+            <span class="modal-form-policy-checkbox">
+              <svg class="checkbox-icon" width="16px" height="16px">
+                <use href="./images/icons.svg#icon-Vector"></use>
+              </svg>
+            </span>
+            I accept the terms and conditions of the&nbsp;
+            <a href="">Privacy Policy</a>
+          </label>
+          <button type="submit" class="modal-form-submit">Send</button>
         </form>
       </div>
     </div>
