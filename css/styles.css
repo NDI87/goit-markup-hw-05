@@ -26,17 +26,21 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0;
+  margin: 0;modal-formimg
 }
 img {
   display: block;
   max-width: 100%;
+  height: auto;
+  width: 100%;
 }
 * {
   box-sizing: border-box;
 }
+ 
 .container {
-  width: 1158px;
+  /* width: 1158px; */
+ width:100%;
   padding-left: 15px;
   padding-right: 15px;
 
@@ -44,8 +48,8 @@ img {
 }
 
 .section {
-  padding-top: 120px;
-  padding-left: 120px;
+  /* padding-top: 120px;
+  padding-bottom: 120px; */
 }
 .visually-hidden {
   position: absolute;
@@ -323,8 +327,10 @@ button {
 
 .team {
   background-color: var(--light-color);
-  padding-top: 120px;
-  padding-bottom: 120px;
+  /* padding-top: 120px;
+  padding-bottom: 120px; */
+  /* padding-top: 96px;
+  padding-bottom: 96px; */
 }
 
 .team-title {
@@ -338,13 +344,15 @@ button {
   margin-bottom: 72px;
 }
 .team-list {
-  display: flex;
-  gap: 24px;
+  /* display: flex; */
+  /* gap: 24px; */
+  /* gap: 72px; */
 }
 
 .team-item {
   text-align: center;
-  flex-basis: calc((100% - 72px) / 4);
+  /* flex-basis: calc((100% - 72px) / 4); */
+  flex-basis: 100%;
 
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -985,4 +993,62 @@ cursor: pointer;
 
 .modal-form-policy:checked + .modal-form-policy-checkbox > .checkbox-icon {
   opacity: 1;
+}
+
+
+@media screen and (min-width:480px) {
+  .container{
+    width: 264px;
+  }
+   .team{
+    padding-top: 116px;
+  padding-bottom: 76px;
+  }
+  
+
+   
+  
+}
+   
+  
+@media screen and (min-width:768px) {
+
+.container{
+    width: 768px;
+  }
+   .team-list {
+display: flex;
+flex-wrap: wrap;
+
+  gap: 24px;}
+
+  .team{
+    padding-top: 96px;
+  padding-bottom: 96px;
+  }
+   
+
+  .team-item{
+flex-basis: calc((100% - 72px) / 2);
+}
+
+}
+
+@media screen and (min-width:1200px) {
+
+.container{
+    width: 1158px;
+  }
+  .team{
+    padding-top: 120px;
+  padding-bottom: 120px;
+  }
+
+  
+
+  .team-item{
+flex-basis: calc((100% - 72px) / 4);
+
+}
+
 }
