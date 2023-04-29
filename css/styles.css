@@ -731,9 +731,11 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  letter-spacing: 0.04em;
   padding: 8px 24px;
   gap: 16px;
-
+  border: transparent;
+border-radius: 4px;
   background-color: var(--second-color);
   color: var(--main-background-color);
 
@@ -781,8 +783,8 @@ button {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
 
-  min-width: 400px;
-  min-height: 576px;
+  min-width: 408px;
+  min-height: 584px;
   padding: 24px;
   padding-top: 72px;
 
@@ -892,7 +894,7 @@ button {
 .modal-label {
   font-size: 12px;
   line-height: 14px;
-
+ margin-bottom: 4px;
   letter-spacing: 0.04em;
 
   color: var(--subtle-text-color);
@@ -922,7 +924,7 @@ button {
   letter-spacing: 0.04em;
 
   color: var(--logo-color)
-  border: 1px solid var(--modal-overlay-color);
+  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
 
   transition: border-color var(--typical-transition);
@@ -946,6 +948,7 @@ button {
   line-height: 1.16;
   letter-spacing: 0.04em;
   color: var(--subtle-text-color);
+ 
 }
 .modal-form-policy-field > a {
   text-decoration: underline;
@@ -957,6 +960,8 @@ button {
   justify-content: center;
   align-items: center;
   margin-right: 8px;
+  
+
 
   border: 1px solid var(--modal-overlay-color);
   border-radius: 2px;
@@ -969,13 +974,16 @@ button {
 .modal-form-policy:checked + .modal-form-policy-checkbox {
   background-color: var(--hover-color);
   border-color: var(--hover-color);
+  
+}
+.checkbox-icon{
+ 
 }
 
 .modal-form-submit {
-  align-self: center;
-  margin-left: 119px;
-  margin-right: 120px;
-  margin-bottom: 20px;
+ 
+  margin: 0 auto;
+  display: block;
   min-width: 169px;
   min-height: 56px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -984,7 +992,13 @@ button {
   border: transparent;
 cursor: pointer;
   transition: background-color var(--typical-transition);
+  border-radius: 4px;
 }
+.checkbox-icon {
+    opacity: 0;
+    fill: var(--light-color);
+}
+
 
 .modal-form-submit:hover,
 .modal-form-submit:focus {
