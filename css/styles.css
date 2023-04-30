@@ -11,7 +11,7 @@
   --modal-overlay-color: rgba(46, 47, 66, 0.4);
   --typical-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   --modal-background-color: #fcfcfc;
-  --modal-overlay-color: rgba(46, 47, 66, 0.4);
+  --modal-overlay-color:  rgba(46, 47, 66, 0.4);
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -837,9 +837,10 @@ border-radius: 4px;
 }
 
 /* Modal-forms */
-.modal-label {
-  margin-bottom: 8px;
+.modal-form-field{
+  
 }
+
 .modal-form-description {
   display: block;
   margin-bottom: 4px;
@@ -847,6 +848,7 @@ border-radius: 4px;
   line-height: 1.16;
   letter-spacing: 0.04em;
   color: var(--subtle-text-color);
+  
 }
 .input-wrap {
   position: relative;
@@ -894,7 +896,7 @@ border-radius: 4px;
 .modal-label {
   font-size: 12px;
   line-height: 14px;
- margin-bottom: 4px;
+  margin-bottom: 8px;
   letter-spacing: 0.04em;
 
   color: var(--subtle-text-color);
@@ -923,11 +925,10 @@ border-radius: 4px;
   line-height: 1.16;
   letter-spacing: 0.04em;
 
-  color: var(--logo-color)
+  
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
-
-  transition: border-color var(--typical-transition);
+ transition: border-color var(--typical-transition);
 }
 
 .modal-form-message::placeholder {
@@ -960,7 +961,8 @@ border-radius: 4px;
   justify-content: center;
   align-items: center;
   margin-right: 8px;
-  
+  width: 16px;
+  height: 16px;
 
 
   border: 1px solid var(--modal-overlay-color);
